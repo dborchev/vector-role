@@ -31,5 +31,13 @@
        become: true
        with_items:
          - "{{repofiles.files}}"
-
-
+     - name: Create group
+       ansible.builtin.group:
+          name: ec2-user
+          state: present
+     - name: Create user
+       ansible.builtin.user:
+          name: ec2-user
+          state: present
+          shell: /bin/bash
+          group: ec2-user
