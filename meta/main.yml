@@ -2,7 +2,8 @@ galaxy_info:
   author: Denis Borchev
   description: install minimal Vector setup
   company: n/a
-
+  role_name: vector
+  namespace: dborchev
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
   # issue_tracker_url: http://example.com/issue/tracker
